@@ -1,1 +1,1 @@
-- Uso do https://smith.langchain.com/hub/hardkothari/prompt-maker
+- Faça integração com o https://smith.langchain.com/hub/hardkothari/prompt-maker no código do backend gerado
