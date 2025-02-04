@@ -1,0 +1,1 @@
+- Uso do https://smith.langchain.com/hub/hardkothari/prompt-maker

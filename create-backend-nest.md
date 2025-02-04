@@ -1,0 +1,12 @@
+Crie um backend utilizando o framework Nest JS para a criação siga os detalhes abaixo: 
+- Use as boas práticas de clean code e clean architecture
+- Use os conceitos de SOLID
+- Use a separação por modulos/features
+- Use os comando do yarn 
+- Use o lint como validador de formatação 
+- Gere um README com o entendimento completo da aplicação, ou seja, considere os itens abaixo: 
+  - Explicação de comandos usados para setup da aplicação
+  - Como rodar a aplicação local 
+  - Como rodar os testes unitários 
+  - Como buildar a aplicação para gerar o binário de execução 
+  - Explicação completa da estrutura das pastas e dos arquivos criados, bem como os mecanismos de lógicas 
