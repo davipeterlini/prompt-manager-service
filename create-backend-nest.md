@@ -13,3 +13,5 @@ Crie um backend utilizando o framework Nest JS para a criação siga os detalhes
   - Como rodar os testes unitários 
   - Como buildar a aplicação para gerar o binário de execução 
   - Explicação completa da estrutura das pastas e dos arquivos criados, bem como os mecanismos de lógicas 
+- Crie o arquivo .gitignore com o conteúdo completo de ignores para a linguagem e framework escolhidos
+  - Adicione no .gitignore o .coder/ e .coderignore
