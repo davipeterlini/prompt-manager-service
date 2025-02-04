@@ -4,6 +4,9 @@ Crie um backend utilizando o framework Nest JS para a criação siga os detalhes
 - Use a separação por modulos/features
 - Use os comando do yarn 
 - Use o lint como validador de formatação 
+- Use a estrutura do github para rodar a pipeline do github workflow
+- Use Husky para validação de commit e para isso trabalhe no conceito de semver
+- Criar arquivo do docker-compose e Dockerfile para rodar a aplicação em container 
 - Gere um README com o entendimento completo da aplicação, ou seja, considere os itens abaixo: 
   - Explicação de comandos usados para setup da aplicação
   - Como rodar a aplicação local 
