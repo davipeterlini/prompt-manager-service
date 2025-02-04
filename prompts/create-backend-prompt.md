@@ -1,0 +1,21 @@
+Crie o CRUD para uma aplicação que se comportará como um prompt manager para servir de aplicação que fornece prompts customizados a usuários
+- Faça integração com o https://smith.langchain.com/hub/hardkothari/prompt-maker no código do backend gerado
+- Adicione a estrutura de banco de dados do mongodb
+
+um backend utilizando o framework Nest JS para a criação siga os detalhes abaixo: 
+- Use as boas práticas de clean code e clean architecture
+- Use os conceitos de SOLID
+- Use a separação por modulos/features
+- Use os comando do yarn 
+- Use o lint como validador de formatação 
+- Use a estrutura do github para rodar a pipeline do github workflow
+- Use Husky para validação de commit e para isso trabalhe no conceito de semver
+- Criar arquivo do docker-compose e Dockerfile para rodar a aplicação em container 
+- Gere um README com o entendimento completo da aplicação, ou seja, considere os itens abaixo: 
+  - Explicação de comandos usados para setup da aplicação
+  - Como rodar a aplicação local 
+  - Como rodar os testes unitários 
+  - Como buildar a aplicação para gerar o binário de execução 
+  - Explicação completa da estrutura das pastas e dos arquivos criados, bem como os mecanismos de lógicas 
+- Crie o arquivo .gitignore com o conteúdo completo de ignores para a linguagem e framework escolhidos
+  - Adicione no .gitignore o .coder/ e .coderignore
