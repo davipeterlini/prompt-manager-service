@@ -3,8 +3,8 @@ import { getModelToken } from '@nestjs/mongoose';
 import { HttpService } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { of } from 'rxjs';
-import { PromptService } from '../../src/modules/prompt/prompt.service';
-import { Prompt } from '../../src/modules/prompt/interfaces/prompt.interface';
+import { PromptService } from '../../src/modules/prompt/use-cases/prompt.service';
+import { Prompt } from '../../src/modules/prompt/entities/prompt.entity';
 import { CreatePromptDto } from '../../src/modules/prompt/dto/create-prompt.dto';
 import { UpdatePromptDto } from '../../src/modules/prompt/dto/update-prompt.dto';
 
