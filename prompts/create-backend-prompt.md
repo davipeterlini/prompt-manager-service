@@ -6,3 +6,4 @@ Crie o CRUD para uma aplicação que se comportará como um prompt manager para 
 - Use a separação por modulos/features
 - Atualize o README com a documentação técnica
 - Atualize a estrutura do docker para que possa compreender a subida do mongodb
+- Crie os testes unitários da aplicação

@@ -1,6 +1,6 @@
-# NestJS Clean Architecture Example
+# Prompt Manager
 
-This project is an example of a backend application built with NestJS, following clean code and clean architecture principles, and using SOLID principles.
+This project is a backend application built with NestJS, following clean code and clean architecture principles, and using SOLID principles. It serves as a prompt manager to provide custom prompts to users.
 
 ## Setup
 
@@ -40,7 +40,15 @@ The project follows a modular structure, with each feature separated into its ow
 
 - `src/`: Contains the source code of the application
   - `modules/`: Contains the feature modules
+    - `prompt/`: Contains the prompt management feature
+      - `dto/`: Data Transfer Objects for the prompt module
+      - `interfaces/`: Interfaces for the prompt module
+      - `schemas/`: Mongoose schemas for the prompt module
+      - `prompt.controller.ts`: The controller for the prompt module
+      - `prompt.module.ts`: The module definition for the prompt module
+      - `prompt.service.ts`: The service for the prompt module
   - `main.ts`: The entry point of the application
+  - `app.module.ts`: The root module of the application
 - `test/`: Contains the unit tests
 - `Dockerfile`: Docker configuration for building the application container
 - `docker-compose.yml`: Docker Compose configuration for running the application in a container
@@ -52,14 +60,22 @@ The project follows a modular structure, with each feature separated into its ow
 
 - `src/`
   - `modules/`
-    - `example/`
-      - `example.controller.ts`
-      - `example.module.ts`
-      - `example.service.ts`
+    - `prompt/`
+      - `dto/`
+        - `create-prompt.dto.ts`
+        - `update-prompt.dto.ts`
+      - `interfaces/`
+        - `prompt.interface.ts`
+      - `schemas/`
+        - `prompt.schema.ts`
+      - `prompt.controller.ts`
+      - `prompt.module.ts`
+      - `prompt.service.ts`
   - `main.ts`
+  - `app.module.ts`
 - `test/`
-  - `example/`
-    - `example.service.spec.ts`
+  - `prompt/`
+    - `prompt.service.spec.ts`
 - `Dockerfile`
 - `docker-compose.yml`
 - `.huskyrc`
@@ -83,3 +99,7 @@ The application can be run in a Docker container using the provided `Dockerfile`
 ```bash
 docker-compose up --build
 ```
+
+## MongoDB
+
+The application uses MongoDB as its database. The MongoDB instance is configured in the `docker-compose.yml` file. The connection to the MongoDB instance is established in the `app.module.ts` file using the `MongooseModule.forRoot` method.

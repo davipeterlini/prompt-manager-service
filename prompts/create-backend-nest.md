@@ -2,6 +2,7 @@ Crie um backend utilizando o framework Nest JS para a criação siga os detalhes
 - Use as boas práticas de clean code e clean architecture
 - Use os conceitos de SOLID
 - Use a separação por modulos/features
+  - Use as nomenclaturas: controller, use case, entity, dto
 - Use os comando do yarn 
 - Use o lint como validador de formatação 
 - Use a estrutura do github para rodar a pipeline do github workflow
@@ -15,3 +16,4 @@ Crie um backend utilizando o framework Nest JS para a criação siga os detalhes
   - Explicação completa da estrutura das pastas e dos arquivos criados, bem como os mecanismos de lógicas 
 - Crie o arquivo .gitignore com o conteúdo completo de ignores para a linguagem e framework escolhidos
   - Adicione no .gitignore o .coder/ e .coderignore
+- Crie a estrutura de testes unitários
