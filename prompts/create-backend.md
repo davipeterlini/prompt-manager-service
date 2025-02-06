@@ -1,4 +1,4 @@
-Crie um backend utilizando a {{LANGUAGE}} para a criação siga os detalhes abaixo: 
+Crie um backend utilizando a linguagem {{language}} para a criação siga os detalhes abaixo: 
 - Use as boas práticas de clean code e clean architecture
 - Use os conceitos de SOLID
 - Use a separação por modulos/features
@@ -19,3 +19,6 @@ Crie um backend utilizando a {{LANGUAGE}} para a criação siga os detalhes abai
 - Crie a estrutura de testes unitários
 - Todas as variáveis da aplicação devem estar em um arquivo .env 
   - As variávies que são sensíveis devem estar em um arquivo .env.local, e esse arquivo deve estar adicionado no .gitignore
+- Consider adicionar logs do console da aplicação e locais onde achar necessário 
+- Crie uma estrutura de Excepetion handler para centralizar a tratativa de erro 
+  - Adicione nessa estrutura os principais erros de REST
