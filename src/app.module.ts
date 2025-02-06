@@ -4,7 +4,7 @@ import { PromptModule } from './modules/prompt/prompt.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/prompt-manager'),
+    MongooseModule.forRoot(process.env.MONGO_URI),
     PromptModule,
   ],
 })

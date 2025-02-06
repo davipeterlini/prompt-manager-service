@@ -1,6 +1,6 @@
-# Prompt Manager
+# {{language}} Clean Architecture Example
 
-This project is a backend application built with NestJS, following clean code and clean architecture principles, and using SOLID principles. It serves as a prompt manager to provide custom prompts to users.
+This project is an example of a backend application built with {{language}}, following clean code and clean architecture principles, and using SOLID principles.
 
 ## Setup
 
@@ -42,11 +42,10 @@ The project follows a modular structure, with each feature separated into its ow
   - `modules/`: Contains the feature modules
     - `prompt/`: Contains the prompt management feature
       - `dto/`: Data Transfer Objects for the prompt module
-      - `interfaces/`: Interfaces for the prompt module
+      - `entities/`: Entities for the prompt module
+      - `controllers/`: Controllers for the prompt module
+      - `use-cases/`: Use cases for the prompt module
       - `schemas/`: Mongoose schemas for the prompt module
-      - `prompt.controller.ts`: The controller for the prompt module
-      - `prompt.module.ts`: The module definition for the prompt module
-      - `prompt.service.ts`: The service for the prompt module
   - `main.ts`: The entry point of the application
   - `app.module.ts`: The root module of the application
 - `test/`: Contains the unit tests
@@ -64,13 +63,14 @@ The project follows a modular structure, with each feature separated into its ow
       - `dto/`
         - `create-prompt.dto.ts`
         - `update-prompt.dto.ts`
-      - `interfaces/`
-        - `prompt.interface.ts`
+      - `entities/`
+        - `prompt.entity.ts`
+      - `controllers/`
+        - `prompt.controller.ts`
+      - `use-cases/`
+        - `prompt.service.ts`
       - `schemas/`
         - `prompt.schema.ts`
-      - `prompt.controller.ts`
-      - `prompt.module.ts`
-      - `prompt.service.ts`
   - `main.ts`
   - `app.module.ts`
 - `test/`
@@ -84,7 +84,7 @@ The project follows a modular structure, with each feature separated into its ow
 
 ## Logical Mechanisms
 
-The application is built using NestJS, which provides a modular architecture and dependency injection. Each feature is implemented as a separate module, with its own controller, service, and module files. The application uses SOLID principles to ensure maintainability and scalability.
+The application is built using {{language}}, which provides a modular architecture and dependency injection. Each feature is implemented as a separate module, with its own controller, service, and module files. The application uses SOLID principles to ensure maintainability and scalability.
 
 - **Single Responsibility Principle**: Each class and module has a single responsibility.
 - **Open/Closed Principle**: Modules are open for extension but closed for modification.
