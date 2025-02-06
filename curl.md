@@ -51,7 +51,4 @@ Replace `{id}` with the actual prompt ID.
 ## Get Custom Prompt
 
 ```sh
-curl -X POST http://localhost:3000/prompts/custom/{id}
-```
-
-Replace `{id}` with the actual prompt ID.
+curl -X POST http://localhost:3000/prompts/custom/{id```

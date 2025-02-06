@@ -7,6 +7,7 @@ import { PromptService } from '../../src/modules/prompt/use-cases/prompt.service
 import { Prompt } from '../../src/modules/prompt/entities/prompt.entity';
 import { CreatePromptDto } from '../../src/modules/prompt/dto/create-prompt.dto';
 import { UpdatePromptDto } from '../../src/modules/prompt/dto/update-prompt.dto';
+import { NotFoundException } from '@nestjs/common';
 
 const mockPrompt = (name = 'Test Prompt', description = 'Test Description', template = 'Test Template'): any => ({
   name,
@@ -84,6 +85,14 @@ describe('PromptService', () => {
     expect(result).toEqual(mockPrompt());
   });
 
+  it('should throw an error if prompt not found', async () => {
+    const id = 'someId';
+    jest.spyOn(model, 'findById').mockReturnValue({
+      exec: jest.fn().mockResolvedValueOnce(null),
+    } as any);
+    await expect(service.findOne(id)).rejects.toThrow(NotFoundException);
+  });
+
   it('should update a prompt', async () => {
     const id = 'someId';
     const updatePromptDto: UpdatePromptDto = {
@@ -96,6 +105,17 @@ describe('PromptService', () => {
     expect(result).toEqual({ ...mockPrompt(), ...updatePromptDto });
   });
 
+  it('should throw an error if prompt to update not found', async () => {
+    const id = 'someId';
+    const updatePromptDto: UpdatePromptDto = {
+      name: 'Updated Prompt',
+    };
+    jest.spyOn(model, 'findByIdAndUpdate').mockReturnValue({
+      exec: jest.fn().mockResolvedValueOnce(null),
+    } as any);
+    await expect(service.update(id, updatePromptDto)).rejects.toThrow(NotFoundException);
+  });
+
   it('should delete a prompt', async () => {
     const id = 'someId';
     jest.spyOn(model, 'findByIdAndRemove').mockReturnValue({
@@ -103,6 +123,14 @@ describe('PromptService', () => {
     } as any);
     const result = await service.remove(id);
     expect(result).toEqual(mockPrompt());
+  });
+
+  it('should throw an error if prompt to delete not found', async () => {
+    const id = 'someId';
+    jest.spyOn(model, 'findByIdAndRemove').mockReturnValue({
+      exec: jest.fn().mockResolvedValueOnce(null),
+    } as any);
+    await expect(service.remove(id)).rejects.toThrow(NotFoundException);
   });
 
   it('should get a custom prompt', async () => {
