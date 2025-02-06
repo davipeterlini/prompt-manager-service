@@ -1,4 +1,4 @@
-Crie um backend utilizando o framework Nest JS para a criação siga os detalhes abaixo: 
+Crie um backend utilizando a {{LANGUAGE}} para a criação siga os detalhes abaixo: 
 - Use as boas práticas de clean code e clean architecture
 - Use os conceitos de SOLID
 - Use a separação por modulos/features
@@ -17,3 +17,5 @@ Crie um backend utilizando o framework Nest JS para a criação siga os detalhes
 - Crie o arquivo .gitignore com o conteúdo completo de ignores para a linguagem e framework escolhidos
   - Adicione no .gitignore o .coder/ e .coderignore
 - Crie a estrutura de testes unitários
+- Todas as variáveis da aplicação devem estar em um arquivo .env 
+  - As variávies que são sensíveis devem estar em um arquivo .env.local, e esse arquivo deve estar adicionado no .gitignore

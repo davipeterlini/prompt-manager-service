@@ -1,0 +1,79 @@
+- Construção de aplicação de backend que consome o endpoint de prompt template do channels api
+
+    - Docs: 
+      - https://flow.ciandt.com/channels-service#/
+      - https://flow.ciandt.com//ai-orchestration-api/swagger#/
+
+    - Repo: Criação do repo precisa ser no github (Sem Hyper-x)
+    - Linguagem: Python
+    - Detalhes/Idéias: 
+      - Ação do usuário, escolha do prompt
+
+          - Criação de Banco de dado 
+          - Criação dos endpoints para Backend em Pyhton
+          - Ajustes da estrutura do backend para seguir o modelo de clean code
+
+      - Criação do prompt concatenado
+
+          Una os prompts 
+          1
+          2
+          3 
+          e traga o prompt especializado para fazer a tarefa
+
+          -> prompt-specialize
+    
+      - Gravar no endpoint de prompt template do channels service
+    - Esperado: 
+      - Use de práticas de clean code e clean arthitecture 
+      - Estrura de modulos/features 
+      - README
+      - Formação de Código 
+      - Use os conceitos de SOLID
+      - Rodar no docker (Dockerfile e docker-compose)
+      - Banco de Dados (MongoDB)
+      - Collection no Postman (dos endpoints)
+      - Swagger
+    - PLUS:
+      - Fazer o mesmo backend em NEST Js (use Yarn)
+      - Geração do front end - https://bolt.new/
+    - Premissas: 
+      - Execução local 
+      - Execução docker
+
+
+- Construção de aplicação de backend que disponibiliza e envia dados das APIs de métricas do flow,
+
+    - Docs: 
+      - https://flow.ciandt.com/metrics-collector-api/api-docs/#
+
+    - Repo: Criação do repo precisa ser no github (Sem Hyper-x)
+    - Linguagem: Python
+    - Detalhes:
+      - Não usaremos nem PACTH nem POST
+      - Não temos baseurl no ambiente de DEV
+      - Verificar se o PAT token funciona para a API do metricas 
+          - Talvez seja necesário fazer a abertura do PAT token para Obter informações 
+      - Geração do Client ID e Client Secret 
+        - Verificar se tem como gerar de outra forma
+      - Geração de PAT token - https://flow.ciandt.com/auth-engine-api#/api-key/generate-token
+    - Idéias: 
+        - Trazer os dados da API de metricas e jogá-los um endpoint 
+        - Consumir o endpoint em um front 
+    - Esperado: 
+      - Use de práticas de clean code e clean arthitecture 
+      - Estrura de modulos/features 
+      - README
+      - Formação de Código 
+      - Use os conceitos de SOLID
+      - Rodar no docker (Dockerfile e docker-compose)
+      - Banco de Dados (MongoDB)
+      - Collection no Postman (dos endpoints)
+      - Swagger
+    - PLUS:
+      - Geração do front end - https://bolt.new/
+      - Fazer o mesmo backend em NEST Js (use Yarn)
+    - Premissas: 
+      - Execução local 
+      - Execução docker
+
