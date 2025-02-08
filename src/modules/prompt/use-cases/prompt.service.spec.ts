@@ -3,10 +3,10 @@ import { getModelToken } from '@nestjs/mongoose';
 import { HttpService } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { of } from 'rxjs';
-import { PromptService } from '../../src/modules/prompt/use-cases/prompt.service';
-import { Prompt } from '../../src/modules/prompt/entities/prompt.entity';
-import { CreatePromptDto } from '../../src/modules/prompt/dto/create-prompt.dto';
-import { UpdatePromptDto } from '../../src/modules/prompt/dto/update-prompt.dto';
+import { PromptService } from './prompt.service';
+import { Prompt } from '../entities/prompt.entity';
+import { CreatePromptDto } from '../dto/create-prompt.dto';
+import { UpdatePromptDto } from '../dto/update-prompt.dto';
 import { NotFoundException } from '@nestjs/common';
 
 const mockPrompt = (name = 'Test Prompt', description = 'Test Description', template = 'Test Template'): any => ({
