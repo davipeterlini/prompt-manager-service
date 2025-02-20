@@ -64,6 +64,12 @@ coder run -b text="specific logic or concept" -b file_extention="All extention" 
 coder run -b info="specific logic or concept" -b linguage="pt-br" -f ~/prompts/custom/code-repo-scanner.md
 ```
 
+### Code Validation Prompt
+
+```sh
+coder run -b language=JavaScript -f ~/prompts/custom/code-validation-prompt.md
+```
+
 ## Conclusion
 
 By following the instructions above, you can run the prompts using the `coder` CLI to generate various code templates and documentation. Make sure to replace the placeholder values with actual values as needed.
