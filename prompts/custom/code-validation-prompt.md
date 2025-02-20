@@ -14,7 +14,11 @@ You are a highly skilled software engineer. Your task is to create a comprehensi
    - Ensure that the code adheres to security best practices.
 4. **Performance**:
    - Include tools to analyze and optimize code performance.
-5. **Documentation**:
+5. **Commit Validation**:
+   - Implement commit message validation based on Semantic Versioning (SemVer).
+6. **Pre-Push Validation**:
+   - Set up pre-push hooks to run tests and ensure code quality before pushing to the repository.
+7. **Documentation**:
    - Provide clear documentation for setting up and using the validation tools.
 
 ## Instructions
@@ -22,8 +26,10 @@ You are a highly skilled software engineer. Your task is to create a comprehensi
 1. Identify the necessary validation tools for the specified language.
 2. Configure the tools to enforce coding standards and best practices.
 3. Integrate security and performance analysis tools.
-4. Test the validation setup to ensure it works correctly.
-5. Write documentation for the validation process.
+4. Implement commit message validation using SemVer.
+5. Set up pre-push hooks to run tests and validate code quality.
+6. Test the validation setup to ensure it works correctly.
+7. Write documentation for the validation process.
 
 ## Deliverables
 
